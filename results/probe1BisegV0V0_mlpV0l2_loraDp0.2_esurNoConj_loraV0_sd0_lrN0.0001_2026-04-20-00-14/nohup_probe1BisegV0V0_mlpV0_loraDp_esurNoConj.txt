@@ -1,0 +1,69 @@
+nohup: 忽略输入
+self.m_input_ids.shape: torch.Size([1, 208820])
+self.masks_seq.shape: torch.Size([1, 208820])
+self.m_seq_len.shape: torch.Size([3219, 1])
+self.indexmap_sample2sent.shape: torch.Size([3219])
+self.sample_ids.shape: torch.Size([3219])
+self.num_sent: 3219
+
+max_seq_len: tensor(138, dtype=torch.int32)
+Finish of data loading!
+
+
+
+remap_samples::num_dataset=4
+remap_samples::self.padlens=tensor([ 60,  80, 100, 140])
+remap_samples::list_dataset=[torch.Size([2603]), torch.Size([500]), torch.Size([90]), torch.Size([26])]
+
+self.m_input_ids.shape: torch.Size([1, 29807])
+self.masks_seq.shape: torch.Size([1, 29807])
+self.m_seq_len.shape: torch.Size([455, 1])
+self.indexmap_sample2sent.shape: torch.Size([455])
+self.sample_ids.shape: torch.Size([455])
+self.num_sent: 455
+
+max_seq_len: tensor(111, dtype=torch.int32)
+Finish of data loading!
+
+
+
+remap_samples::num_dataset=3
+remap_samples::self.padlens=tensor([ 60,  80, 111])
+remap_samples::list_dataset=[torch.Size([356]), torch.Size([82]), torch.Size([17])]
+
+self.m_input_ids.shape: torch.Size([1, 63120])
+self.masks_seq.shape: torch.Size([1, 63120])
+self.m_seq_len.shape: torch.Size([974, 1])
+self.indexmap_sample2sent.shape: torch.Size([974])
+self.sample_ids.shape: torch.Size([974])
+self.num_sent: 974
+
+max_seq_len: tensor(134, dtype=torch.int32)
+Finish of data loading!
+
+
+
+remap_samples::num_dataset=3
+remap_samples::self.padlens=tensor([ 60,  80, 140])
+remap_samples::list_dataset=[torch.Size([800]), torch.Size([154]), torch.Size([20])]
+
+self.m_input_ids.shape: torch.Size([1, 543756])
+self.masks_seq.shape: torch.Size([1, 543756])
+self.m_seq_len.shape: torch.Size([997, 1])
+self.indexmap_sample2sent.shape: torch.Size([997])
+self.sample_ids.shape: torch.Size([997])
+self.num_sent: 997
+
+max_seq_len: tensor(1192, dtype=torch.int32)
+Finish of data loading!
+
+
+
+remap_samples::num_dataset=4
+remap_samples::self.padlens=tensor([ 500,  520,  540, 1192])
+remap_samples::list_dataset=[torch.Size([876]), torch.Size([33]), torch.Size([25]), torch.Size([63])]
+
+2026-04-20-00-14
+clsfr_br0.classifier: 6
+[Linear(in_features=1024, out_features=1024, bias=True), LayerNorm((1024,), eps=1e-05, elementwise_affine=True), GELU(approximate='none'), Dropout(p=0.0, inplace=False), Linear(in_features=1024, out_features=7, bias=True), Dropout(p=0.0, inplace=False)]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:  78%|███████▊  | 306/391 [00:00<00:00, 3054.90it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 3380.99it/s]

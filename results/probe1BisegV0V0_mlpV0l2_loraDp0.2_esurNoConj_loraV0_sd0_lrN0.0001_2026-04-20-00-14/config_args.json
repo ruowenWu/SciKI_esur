@@ -1,0 +1,85 @@
+{
+    "dataset_train": "raw2scib_scierc_train",
+    "dataset_unlabeled": "promptedScibV0_esur_DE_minDg20_ncluster4_lower",
+    "dataset_dev": "raw2scib_scierc_dev",
+    "dataset_test": "raw2scib_scierc_test",
+    "flag_lm": "bgem3",
+    "dir_train": "data_scierc/processed",
+    "dir_dev": "data_scierc/processed",
+    "dir_test": "data_scierc/processed",
+    "dir_unlabeled": "data_biblio/processed",
+    "device": "cuda:0",
+    "seed": 0,
+    "lr_label": null,
+    "lr_net": 0.0001,
+    "bsz_train": [
+        300,
+        300,
+        300,
+        300
+    ],
+    "bsz_unlabeled": [
+        5,
+        5,
+        5,
+        5
+    ],
+    "bsz_dev": [
+        300,
+        300,
+        300
+    ],
+    "bsz_test": [
+        300,
+        300,
+        300
+    ],
+    "torch_float_type": "bfloat16",
+    "load_hstate": false,
+    "loop_outer": 500000,
+    "loop_inner": null,
+    "dis_metric": null,
+    "lora_r": 6,
+    "lora_alpha": 16,
+    "lora_dropout": 0.2,
+    "lora_target_modules": [
+        "query",
+        "key",
+        "value"
+    ],
+    "do_save": true,
+    "freq_flush": 200,
+    "prefix_conversion": "convertedV0",
+    "padlen_train": [
+        60,
+        80,
+        100,
+        140
+    ],
+    "padlen_dev": [
+        60,
+        80,
+        111
+    ],
+    "padlen_test": [
+        60,
+        80,
+        140
+    ],
+    "padlen_unlabeled": [
+        500,
+        520,
+        540,
+        1192
+    ],
+    "date_str": "2026-04-20-00-14",
+    "filename_pretrained": "e0BisegV0V0_mlpV0l2_loraDp0.2_esurNoConj_loraV0_sd0_lrN0.0001",
+    "date_str_loaded": "2025-09-11-22-44",
+    "dir_pretrained_eval": "../../expt0/e1along/e0BisegV0V0_mlpV0l2_loraDp0.2_esurNoConj_loraV0_sd0_lrN0.0001_2025-09-11-22-44",
+    "filename_ckpt_epoch": "../../expt0/e1along/e0BisegV0V0_mlpV0l2_loraDp0.2_esurNoConj_loraV0_sd0_lrN0.0001_2025-09-11-22-44/ckpt_maxCmplt_br0_e4323_2025-09-11-22-44.pt",
+    "num_class": 7,
+    "sentinel_eval": 1,
+    "br0_hsz": [
+        1024
+    ]
+}
